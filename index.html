@@ -5,6 +5,44 @@
 </head>
 
 <body>
+    <h1>Data Selection</h1>
+
+    <p>
+        Our first step in completing this project was choosing a data set. To do this, we looked at various collections of
+        public data sources but decided to use a data set from Tableau Public because of how well organized and interesting the
+        data sets offered there were. The data set that piqued our interest the most was a data set called “Cat vs. Dog
+        Popularity in the US.” After having a raucous and lively debate about whether cats or dogs are better, we decided that
+        we wanted to investigate this issue and use this data to create our visualization.
+
+        <a href="https://public.tableau.com/en-us/s/resources?qt-overview_resources=1#qt-overview_resources">Here</a> is our main data source.
+    
+    </p>
+
+    <h1>Questions</h1>
+    <p>       
+        After choosing our dataset, we came up with a number of questions that we wanted to answer. These questions are listed
+        below:
+        Are cats or dogs the more popular pet in the US?
+        In which state are there the most cat owners?
+        In which state are there the most dog owners?
+        Is there a particular part of the country that prefers dogs over cats or vice versa?
+        Do most people in the US own either a cat or a dog?
+        What is the average number of cats and dogs per household in the US?
+    </p>
+
+    <h1>Processing</h1>
+    <p>
+        The next step for us was to clean and process this data set. Luckily for us, the data presented was already very clean,
+        but we did need to do some processing in order to best answer some of our lingering questions. We created additional
+        columns using SQL commands and if statements. These additional columns included “percent pet household” and “percent
+        non-pet household,” which held the data for the percentage of households in the U.S. that owned and did not own pets
+        respectively. We also created a new data table column called “cat or dog” which stated whether the state of that row had
+        a majority dog population or a majority cat population. Additionally, we found a dataset with state abbreviations and
+        the positions for where marks should be displayed to create a visualization that would take the shape of a map of the
+        U.S. We left joined this dataset with the cats and dogs dataset in order to have all our data in one place.
+    </p>
+
+
     <h1>The Main Vis</h1>
     <div class='tableauPlaceholder' id='viz1602190172630' style='position: relative'><noscript><a href='#'><img alt=' '
                     src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;N7&#47;N7G7GH68G&#47;1_rss.png'
@@ -24,6 +62,10 @@
     <script
         type='text/javascript'>                    var divElement = document.getElementById('viz1602190172630'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '1016px'; vizElement.style.height = '991px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 
+
+        <h1>Findings</h1>
+
+        <h1>Lessons Learned</h1>
 </body>
 
 
