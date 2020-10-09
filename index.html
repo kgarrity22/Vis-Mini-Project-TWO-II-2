@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap">
 
@@ -18,69 +19,10 @@
 </div>
 
 <body>
-    <h1>Data Selection</h1>
-
-    <p>
-        Our first step in completing this project was choosing a data set. To do this, we looked at various collections of
-        public data sources but decided to use a data set from Tableau Public because of how well organized and interesting the
-        data sets offered there were. The data set that piqued our interest the most was a data set called “Cat vs. Dog
-        Popularity in the US.” After having a raucous and lively debate about whether cats or dogs are better, we decided that
-        we wanted to investigate this issue and use this data to create our visualization.
-
-        <a href="https://public.tableau.com/en-us/s/resources?qt-overview_resources=1#qt-overview_resources">Here</a> is our main data source.
     
-    </p>
-    <img src="assets/exceldata.jpg">
-    <img src="assets/catsndogs.png">
-
-    <h1>Questions</h1>
-    <p>       
-        After choosing our dataset, we came up with a number of questions that we wanted to answer. These questions are listed
-        below:
-        Are cats or dogs the more popular pet in the US?
-        In which state are there the most cat owners?
-        In which state are there the most dog owners?
-        Is there a particular part of the country that prefers dogs over cats or vice versa?
-        Do most people in the US own either a cat or a dog?
-        What is the average number of cats and dogs per household in the US?
-    </p>
-
-
-    <h1>Processing</h1>
-    <p>
-        The next step for us was to clean and process this data set. Luckily for us, the data presented was already very clean,
-        but we did need to do some processing in order to best answer some of our lingering questions. We created additional
-        columns using SQL commands and if statements. These additional columns included “percent pet household” and “percent
-        non-pet household,” which held the data for the percentage of households in the U.S. that owned and did not own pets
-        respectively. We also created a new data table column called “cat or dog” which stated whether the state of that row had
-        a majority dog population or a majority cat population. Additionally, we found a dataset with state abbreviations and
-        the positions for where marks should be displayed to create a visualization that would take the shape of a map of the
-        U.S. We left joined this dataset with the cats and dogs dataset in order to have all our data in one place.
-    </p>
-    <img src="assets/data-cleaned.png">
-
-    <h1>Exploration</h1>
-    <p>
-        During the exploration process we started out very broad by considering whether or not households even owned pets to
-        begin with. From there we were able to refine our questions by observing how cat and dog populations varied by state. 
-        In order to compare state data, we had to then look at the number of cats or dogs owned in each household. We created
-        11 worksheets that contained bar graphs, bubble charts, maps, and pie charts. Here is an example of how we chose a graph
-        to answer the question, "Is there a particular part of the country that prefers dogs over cats or vice versa?"
-
-
-        **notes
-        switch main map data from cat/dog population to the mean data - answers regional question, swap tooltip vis and bottom
-        right chart.
-        turn on filter for bottom right mean bar chart for both cat/dog data
-        the cat/dog specific maps show percentages out of all households. should we consider only talking about pet-owning households?
-        per 1000 -> in 1000s
-        some labeled averages are not averages
-
-    </p>
-
-
-    <h1>The Main Vis</h1>
-    <div class='tableauPlaceholder' id='viz1602190172630' style='position: relative'><noscript><a href='#'><img alt=' '
+        <article class="box">
+                <h1>The Main Vis</h1>
+                <div class='tableauPlaceholder' id='viz1602190172630' style='position: relative'><noscript><a href='#'><img alt=' '
                     src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;N7&#47;N7G7GH68G&#47;1_rss.png'
                     style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
             <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
@@ -96,31 +38,126 @@
             <param name='display_count' value='yes' />
             <param name='language' value='en' /></object></div>
     <script
-        type='text/javascript'>                    var divElement = document.getElementById('viz1602190172630'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '1016px'; vizElement.style.height = '991px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+        type='text/javascript'>                    var divElement = document.getElementById('viz1602190172630'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '1016px'; vizElement.style.height = '991px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);    
+        
+                </script>
+                
+        </article>
+   
+        <article class="box">
+            <h1>Data Selection</h1>
+            <div class="textboxes">
+            
+    <p>
+        Our first step in completing this project was choosing a data set. To do this, we looked at various collections of
+        public data sources but decided to use a data set from Tableau Public because of how well organized and interesting the
+        data sets offered there were. The data set that piqued our interest the most was a data set called “Cat vs. Dog
+        Popularity in the US.” After having a raucous and lively debate about whether cats or dogs are better, we decided that
+        we wanted to investigate this issue and use this data to create our visualization.
 
+        <a href="https://public.tableau.com/en-us/s/resources?qt-overview_resources=1#qt-overview_resources">Here</a> is our main data source.
+    
+    </p>
+    <div class="pictureboxes">
+        <img src="assets/exceldata.jpg">
+        <img src="assets/catsndogs.png">
+    </div>
+    </article>
+    
+        <article class="box">
+            <h1>Questions</h1>
+            <div class="textboxes">
+                <p>       
+                    After choosing our dataset, we came up with a number of questions that we wanted to answer. These questions are listed
+                    below: <br>
+                    Are cats or dogs the more popular pet in the US? <br>
+                    In which state are there the most cat owners? <br>
+                    In which state are there the most dog owners? <br>
+                    Is there a particular part of the country that prefers dogs over cats or vice versa? <br>
+                    Do most people in the US own either a cat or a dog? <br>
+                    What is the average number of cats and dogs per household in the US? <br>
+                </p>
+            </div>
+        </article>
 
+    <article class="box">
+        <h1>Processing</h1>
+        <div class="textboxes">
+            <p>
+                The next step for us was to clean and process this data set. Luckily for us, the data presented was already very clean,
+                but we did need to do some processing in order to best answer some of our lingering questions. We created additional
+                columns using SQL commands and if statements. These additional columns included “percent pet household” and “percent
+                non-pet household,” which held the data for the percentage of households in the U.S. that owned and did not own pets
+                respectively. We also created a new data table column called “cat or dog” which stated whether the state of that row had
+                a majority dog population or a majority cat population. Additionally, we found a dataset with state abbreviations and
+                the positions for where marks should be displayed to create a visualization that would take the shape of a map of the
+                U.S. We left joined this dataset with the cats and dogs dataset in order to have all our data in one place.
+            </p>
+            <div class="pictureboxes1">
+                <img src="assets/data-cleaned.png">
+            </div>
+        </div>
+
+        
+    </article>
+   
+    <article class="box">
+        <h1>Exploration</h1>
+        <div class="textboxes">
+            <p>
+                During the exploration process we started out very broad by considering whether or not households even owned pets to
+                begin with. From there we were able to refine our questions by observing how cat and dog populations varied by state. 
+                In order to compare state data, we had to then look at the number of cats or dogs owned in each household. We created
+                11 worksheets that contained bar graphs, bubble charts, maps, and pie charts. Here is an example of how we chose a graph
+                to answer the question, "Is there a particular part of the country that prefers dogs over cats or vice versa?"
+        
+        
+                **notes
+                switch main map data from cat/dog population to the mean data - answers regional question, swap tooltip vis and bottom
+                right chart.
+                turn on filter for bottom right mean bar chart for both cat/dog data
+                the cat/dog specific maps show percentages out of all households. should we consider only talking about pet-owning households?
+                per 1000 -> in 1000s
+                some labeled averages are not averages
+        
+            </p>
+        </div>
+   
+    </article>    
+
+    <article class="box">
         <h1>Findings</h1>
+        <div class="textboxes">
+            </div>
+            </article>
+    
 
-        <h1>Lessons Learned</h1>
-        <p>
-            While the topic of our project may not be the most ground breaking or influential subject, the lessons we learned were
-            enumerable. Firstly, coming together as a group to choose a project idea was no easy task. We scrolled through many
-            different data sets debating on the overarching theme, the applicability of the data, our own individual interests in
-            the topic, and with each topic came personal opinions that all needed to be satisfied. When working with a team, it is
-            important to understand that each person needs to have interest in project. If even just one member does not care about
-            the idea, then the final outcome will reflect that – we are only as strong as our weakest link!
-        </p>
-        <p>
-            Once we chose the topic that appeased and interested us all – the age-old debate of cats vs. dogs- we could begin the
-            thought process to craft the visualization. Here is another lesson learned: iterations are necessary! As seen above, we
-            went through many different design iterations in order to figure out which one best reflected our data, and most easily
-            delivered our message – there is clear divide in the US over cats vs. dogs. We also were able to learn more, at least on
-            the surface level, about the US population through such a simple facing question. For example, does New York prefer cats
-            over dogs because it is much easier to own cats in places such as NYC? We truly were able to see how data is the lines
-            of text in a storybook, and the visualizations are the beautiful images that tie the whole story together. It is not
-            very often in Computer Science courses here at BC that we are able to sit down and craft stories – but with this project
-            we were able to draft, propose, edit, and publish our very own.
-        </p>
+            <article class="box">
+                <h1>Lessons Learned</h1>
+                <div class="textboxes">
+                    <p>
+                        While the topic of our project may not be the most ground breaking or influential subject, the lessons we learned were
+                        enumerable. Firstly, coming together as a group to choose a project idea was no easy task. We scrolled through many
+                        different data sets debating on the overarching theme, the applicability of the data, our own individual interests in
+                        the topic, and with each topic came personal opinions that all needed to be satisfied. When working with a team, it is
+                        important to understand that each person needs to have interest in project. If even just one member does not care about
+                        the idea, then the final outcome will reflect that – we are only as strong as our weakest link!
+                    </p>
+                    <p>
+                        Once we chose the topic that appeased and interested us all – the age-old debate of cats vs. dogs- we could begin the
+                        thought process to craft the visualization. Here is another lesson learned: iterations are necessary! As seen above, we
+                        went through many different design iterations in order to figure out which one best reflected our data, and most easily
+                        delivered our message – there is clear divide in the US over cats vs. dogs. We also were able to learn more, at least on
+                        the surface level, about the US population through such a simple facing question. For example, does New York prefer cats
+                        over dogs because it is much easier to own cats in places such as NYC? We truly were able to see how data is the lines
+                        of text in a storybook, and the visualizations are the beautiful images that tie the whole story together. It is not
+                        very often in Computer Science courses here at BC that we are able to sit down and craft stories – but with this project
+                        we were able to draft, propose, edit, and publish our very own.
+                    </p>
+                    </div>
+                    </article>
+       
+        
 
 </body>
 
