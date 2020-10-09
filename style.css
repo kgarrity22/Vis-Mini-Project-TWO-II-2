@@ -5,7 +5,7 @@ img {
 
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  url("assets/hero.jpg");
+  url("assets/hero-2.jpg");
 
   height: 800px;
   width: 100%;
