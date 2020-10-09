@@ -3,6 +3,7 @@ img {
     height: 500px;
 }
 
+
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
   url("assets/hero-2.jpg");
@@ -29,3 +30,18 @@ img {
   font-size: 100px;
   font-family: 'Staatliches', cursive;
 }
+
+body { 
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1; 
+  animation-fill-mode: forwards; 
+} 
+
+@keyframes fadeInAnimation { 
+  0% { 
+      opacity: 0; 
+  } 
+  100% { 
+      opacity: 1; 
+   } 
+} 
