@@ -19,6 +19,46 @@
 </div>
 
 <body>
+
+    <div class="row">
+        <div class="column">
+            <img src="img_nature.jpg" alt="Nature" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="img_snow.jpg" alt="Snow" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="img_mountains.jpg" alt="Mountains" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="img_lights.jpg" alt="Lights" onclick="myFunction(this);">
+        </div>
+    </div>
+    
+    <!-- The expanding image container -->
+    <div class="container">
+        <!-- Close the image -->
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    
+        <!-- Expanded image -->
+        <img id="expandedImg" style="width:100%">
+    
+        <!-- Image text -->
+        <div id="imgtext"></div>
+    </div>
+
+
+    
+    <h1>Data Selection</h1>
+
+    <p>
+        Our first step in completing this project was choosing a data set. To do this, we looked at various collections of
+        public data sources but decided to use a data set from Tableau Public because of how well organized and interesting the
+        data sets offered there were. The data set that piqued our interest the most was a data set called “Cat vs. Dog
+        Popularity in the US.” After having a raucous and lively debate about whether cats or dogs are better, we decided that
+        we wanted to investigate this issue and use this data to create our visualization.
+
+        <a href="https://public.tableau.com/en-us/s/resources?qt-overview_resources=1#qt-overview_resources">Here</a> is our main data source.
     
     </p>
     <img src="assets/exceldata.jpg">
