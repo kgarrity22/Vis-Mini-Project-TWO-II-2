@@ -60,6 +60,60 @@
 
         <a href="https://public.tableau.com/en-us/s/resources?qt-overview_resources=1#qt-overview_resources">Here</a> is our main data source.
     
+    </p>
+    <img src="assets/exceldata.jpg">
+    <img src="assets/catsndogs.png">
+
+    <h1>Questions</h1>
+    <p>       
+        After choosing our dataset, we came up with a number of questions that we wanted to answer. These questions are listed
+        below:
+        Are cats or dogs the more popular pet in the US?
+        Are there more dogs or more cats in the US?
+        What state has the highest concentration of cat owners?
+        What state has the highest concentration of dog owners?
+        Is there a particular part of the country that prefers dogs over cats or vice versa?
+        Do most people in the US own either a cat or a dog?
+        What is the average number of cats and dogs per household in the US?
+    </p>
+
+
+    <h1>Processing</h1>
+    <p>
+        The next step for us was to clean and process this data set. Luckily for us, the data presented was already very clean,
+        but we did need to do some processing in order to best answer some of our lingering questions. We created additional
+        columns using SQL commands and if statements. These additional columns included “percent pet household” and “percent
+        non-pet household,” which held the data for the percentage of households in the U.S. that owned and did not own pets
+        respectively. We also created a new data table column called “cat or dog” which stated whether the state of that row had
+        a majority dog population or a majority cat population. Additionally, we found a dataset with state abbreviations and
+        the positions for where marks should be displayed to create a visualization that would take the shape of a map of the
+        U.S. We left joined this dataset with the cats and dogs dataset in order to have all our data in one place.
+    </p>
+    <img src="assets/data-cleaned.png">
+
+    <h1>Exploration</h1>
+    <p>
+        During the exploration process we started out very broad by considering whether or not households even owned pets to
+        begin with. From there we were able to refine our questions by observing how cat and dog populations varied by state. 
+        In order to compare state data, we had to then look at the number of cats or dogs owned in each household. We created
+        11 worksheets that contained bar graphs, bubble charts, maps, and pie charts. Here is an example of how we chose a graph
+        to answer the question, "Is there a particular part of the country that prefers dogs over cats or vice versa?"
+
+        bar chart with categorical data - mid atlantic vs. NE etc. -> no it's better to have what looks like the US
+
+        **notes
+        switch main map data from cat/dog population to the mean data - answers regional question, swap tooltip vis and bottom
+        right chart.
+        turn on filter for bottom right mean bar chart for both cat/dog data
+        the cat/dog specific maps show percentages out of all households. should we consider only talking about pet-owning households?
+        per 1000 -> in 1000s
+        some labeled averages are not averages
+
+    </p>
+
+
+    <h1>The Main Vis</h1>
+    <div class='tableauPlaceholder' id='viz1602190172630' style='position: relative'><noscript><a href='#'><img alt=' '
         <article class="box">
                 <h1>The Main Vis</h1>
                 <div class='tableauPlaceholder' id='viz1602190172630' style='position: relative'><noscript><a href='#'><img alt=' '
